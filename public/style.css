@@ -1,0 +1,8 @@
+.master-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(149, 176, 155);
+}

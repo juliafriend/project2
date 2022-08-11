@@ -14,6 +14,11 @@ require('dotenv').config()
 const PORT = process.env.PORT || 3003;
 
 //___________________
+//Models
+//___________________
+const Backyard = require('./models/schema.js');
+const seed = require('./models/seed.js');
+//___________________
 //Database
 //___________________
 // How to connect to the database either via heroku or locally
@@ -48,9 +53,43 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 // Routes
 //___________________
 // localhost:3000
+
+//redirect home route
 app.get('/' , (req, res) => {
-  res.send('Hello World!');
+  res.redirect('/backyard');
 });
+
+//index route
+app.get('/backyard', (req, res) => {
+    Backyard.find({}, (error, allBackyards) => {  
+        res.render(
+            'index.ejs',
+            {
+                backyard: allBackyards
+            }
+        );
+    });
+});
+///seed route///
+// app.get('/backyard/seed', (req, res) => {
+//     Backyard.create(
+//         seed,
+//         (error, data) => {
+//             res.redirect('/backyard');
+//         }
+//     );
+// });
+
+
+
+
+
+
+
+
+
+
+
 
 //___________________
 //Listener

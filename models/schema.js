@@ -8,11 +8,11 @@ const backyardSchema = new mongoose.Schema({
     title: { type: String, required: true, unique: true },
     location: { type: String, required: true },
     pool: { type: Boolean },
-    seating: [ {type:string} ],
-    cooking: [ {type:string} ],
+    seating: [String],
+    cooking: [String],
     petfriendly: { type: Boolean },
-    tags: [{type:string}],
-    availability: [ {type:string} ],
+    tags: [String],
+    availability: [String],
 });
 
 const Backyard = mongoose.model('Backyard', backyardSchema);
