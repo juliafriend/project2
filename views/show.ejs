@@ -6,11 +6,43 @@
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <!-- <nav>
+        <nav>
+            <a href="/backyard">Back to all Backyards</a>
             <a href="/backyard/new">Post Your Yard</a>
-            <a href="/backyard">Show All Backyards</a>
-        </nav> -->
+            
+        </nav>
         <h1>Backyard Borrow- Show Page</h1>
-        
+            <div class="show-container">
+                    <div class="backyard-container">
+                        <h2><%=backyard.title%></h2>
+                        <h3><%=backyard.location%></h3>
+                        <%  if (backyard.pool === true) { %>
+                             <h4> This yard has a pool </h4>
+                        <%} if (backyard.pool === false) {  %>
+                               <h4> No pool available </h4>
+                            <% } %>
+                        <% for (let j = 0; j < backyard.seating.length; j++) { %>
+                            <h4>Seating Options</h4>
+                            <li><%=backyard.seating[j]%></li>
+                        <% } %>
+                        <% for (let k = 0; k < backyard.cooking.length; k++) { %>
+                            <h4>Cooking Options</h4>
+                            <li><%=backyard.cooking[k]%></li>
+                        <% } %>
+                        <%  if (backyard.petfriendly === true) { %>
+                            <h4> Pets welcome </h4>
+                       <%} if (backyard.petfriendly === false) {  %>
+                              <h4> No pets allowed  </h4>
+                           <% } %>
+                           <h4>Additional Tags</h4>
+                        <% for (let l = 0; l < backyard.tags.length; l++) { %> 
+                            <li><%=backyard.tags[l]%></li>
+                        <% } %>
+                            <h4>Dates Available</h4>
+                        <% for (let m = 0; m < backyard.availability.length; m++) { %>
+                            <li><%=backyard.availability[m]%></li>
+                        <% } %>
+                    </div>
+            </div>
     </body>
 </html>

@@ -6,34 +6,29 @@
         <link rel="stylesheet" href="/style.css">
     </head>
     <body>
-        <!-- <nav>
-            <a href="/backyard/new">Post Your Yard</a>
-            <a href="/backyard">Show All Books</a>
-        </nav> -->
-        <h1>BackYard Borrow</h1>
+        <h1>Backyard Borrow</h1>
+        <p>Welcome to Backyard Borrow! Check out available listings below for yards in your area. Click on the title to view more details and availability and to book your new backyard for the day!</p>
+        <nav>
+            <a href="/backyard/new">List your Backyard</a>
+        </nav>
         <div class="master-container">
             <% for (let i = 0; i < backyard.length; i++) { %>
                 <div class="backyard-container">
-                    <!-- <a href="/backyard/<%=backyard[i]._id%>"> -->
+                    <a href="/backyard/<%=backyard[i]._id%>">
                     <h2><%=backyard[i].title%></h2>
                     </a>
                     <h3><%=backyard[i].location%></h3>
-                    <h3><%=backyard[i].pool%></h3>
-                    <% for (let j = 0; j < backyard[i].seating.length; j++) { %>
-                        <h3><%=backyard[i].seating[j]%></h3>
-                    <% } %>
-                    <% for (let k = 0; k < backyard[i].cooking.length; k++) { %>
-                        <h3><%=backyard[i].cooking[k]%></h3>
-                    <% } %>
-                    <h3><%=backyard[i].petfriendly%></h3>
-                    <% for (let l = 0; l < backyard[i].tags.length; l++) { %>
-                        <h3><%=backyard[i].tags[l]%></h3>
-                    <% } %>
-                    <% for (let m = 0; m < backyard[i].availability.length; m++) { %>
-                        <h3><%=backyard[i].availability[m]%></h3>
-                    <% } %>
+                    <h3><%backyard[i].pool%></h3>
                 </div>
             <% } %>
         </div>
+        <h2>House Rules</h2>
+        <p>As a reminder, all backyards are borrowed for free. Please be respectful of your hosts and take everything with you when you leave. Feedback on your individual experience can be submited below.</p>
+        <div class=" new-container">
+            <form action="/backyard">
+                <input type="text" name="feedback" placeholder="Feedback on your experience" /><br/>
+                <input type="submit" value="Submit" />
+            </form>
+            </div>
     </body>
 </html>
