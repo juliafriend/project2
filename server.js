@@ -96,7 +96,17 @@ app.get('/backyard/:id', (req, res) => {
         );
     });
 });
-//// edit route ////
+//// edit route //// 
+app.get('/backyard/:id/edit', (req, res) => {
+    Backyard.findById(req.params.id, (error, foundBackyard) => {
+        res.render(
+            'edit.ejs',
+        {
+            backyard: foundBackyard
+        }
+        );
+    });
+});
 app.put('/backyard/:id', (req, res) => {
     // Re-Formatting arrays
     req.body.seating = req.body.seating.split(' ');
@@ -108,19 +118,24 @@ app.put('/backyard/:id', (req, res) => {
             res.redirect('/backyard');
         });
 });
-
-app.get('/backyard/:id/edit', (req, res) => {
-    Backyard.findById(req.params.id, (error, foundBackyard) => {
-        res.render(
-            'edit.ejs',
-        {
-            backyard: foundBackyard
-        }
-        );
+//// Create Post route////
+app.post('/backyard', (req, res) => {
+  // Re-Formatting arrays
+  req.body.seating = req.body.seating.split(' ');
+  req.body.cooking = req.body.cooking.split(' ');
+  req.body.tags = req.body.tags.split(' ');
+    // Create in MongoDB
+    Backyard.create(req.body, (error, createdBackyard) => {
+        // Redirect to Index
+        res.redirect('/backyard');
     });
 });
-
-
+//// delete route////
+app.delete('/backyard/:id', (req, res) => {
+    Backyard.findByIdAndRemove(req.params.id, (error, foundBackyard) => {
+        res.redirect('/backyard');
+    });
+});
 
 
 

@@ -13,6 +13,7 @@ const backyardSchema = new mongoose.Schema({
     petfriendly: { type: Boolean },
     tags: [String],
     availability: [String],
+    image: {type: String},
 });
 
 const Backyard = mongoose.model('Backyard', backyardSchema);

@@ -42,7 +42,30 @@
                         <% for (let m = 0; m < backyard.availability.length; m++) { %>
                             <li><%=backyard.availability[m]%></li>
                         <% } %>
+                        <br>
+                        <img src="<%=backyard.image %>">
+
                     </div>
+                    <div class="reserve-container"></div>
+                        <h2>Borrow this Backyard!</h2>
+                        <form action="/backyard">
+                            Name: <input type="text" name="name" /><br/>
+                            Email Address: <input type="text" name="email" /><br/>
+                            Phone Number: <input type="number" name="phone" /><br/>
+                            Date: <input type="text" name="date" /><br/>
+                            Reserve Now: <input type="checkbox" name="reserve" /><br/>
+                             <input type="submit" value="Submit Reservation">
+                        </form>
+                    </div>
+                    <div class="buttons-container">
+                        <h2>If you are the listing owner:</h2>
+                        <form action="/backyard/<%=backyard.id%>/edit" method="GET">
+                            <input type="submit" value="Edit Listing">
+                        </form>
+                        <form action="/backyard/<%=backyard.id%>?_method=DELETE" method="POST">
+                            <input type="submit" value="Remove Listing">
+                        </form>
+                    </div>   
             </div>
     </body>
 </html>
