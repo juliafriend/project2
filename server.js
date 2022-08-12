@@ -59,7 +59,7 @@ app.get('/' , (req, res) => {
   res.redirect('/backyard');
 });
 
-//index route
+////index route////
 app.get('/backyard', (req, res) => {
     Backyard.find({}, (error, allBackyards) => {  
         res.render(
@@ -70,7 +70,7 @@ app.get('/backyard', (req, res) => {
         );
     });
 });
-///seed route///
+////seed route////
 // app.get('/backyard/seed', (req, res) => {
 //     Backyard.create(
 //         seed,
@@ -79,6 +79,11 @@ app.get('/backyard', (req, res) => {
 //         }
 //     );
 // });
+
+////New  Route////
+app.get('/backyard/new', (req, res) => {
+    res.render('new.ejs');
+});
 
 
 
