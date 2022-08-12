@@ -96,7 +96,29 @@ app.get('/backyard/:id', (req, res) => {
         );
     });
 });
+//// edit route ////
+app.put('/backyard/:id', (req, res) => {
+    // Re-Formatting arrays
+    req.body.seating = req.body.seating.split(' ');
+    req.body.cooking = req.body.cooking.split(' ');
+    req.body.tags = req.body.tags.split(' ');
+    req.body.availability = req.body.availability.split(' ');
+    // Updating Backyard with New Object
+    Backyard.findByIdAndUpdate(req.params.id, req.body, {new: true}, (error, foundBackyard) => {
+            res.redirect('/backyard');
+        });
+});
 
+app.get('/backyard/:id/edit', (req, res) => {
+    Backyard.findById(req.params.id, (error, foundBackyard) => {
+        res.render(
+            'edit.ejs',
+        {
+            backyard: foundBackyard
+        }
+        );
+    });
+});
 
 
 
