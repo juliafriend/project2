@@ -80,12 +80,22 @@ app.get('/backyard', (req, res) => {
 //     );
 // });
 
-////New  Route////
+////new  Route////
 app.get('/backyard/new', (req, res) => {
     res.render('new.ejs');
 });
 
-
+////show route////
+app.get('/backyard/:id', (req, res) => {
+    Backyard.findById(req.params.id, (error, foundBackyard) => {
+        res.render(
+            'show.ejs',
+            {
+                backyard: foundBackyard
+            }
+        );
+    });
+});
 
 
 

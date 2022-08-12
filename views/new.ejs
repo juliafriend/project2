@@ -10,7 +10,23 @@
             <a href="/backyard/new">Post Your Yard</a>
             <a href="/backyard">Show All Books</a>
         </nav> -->
-        <h1>Backyard Borrow- New Page</h1>
-        
+        <h1>Backyard Borrow</h1>
+        <nav>
+            <a href="/backyard">Return to All Listings</a>
+        </nav>
+        <h2>List your Backyard</h2>
+        <div class=" new-container">
+        <form action="/backyard" method="POST">
+            <input type="text" name="title" placeholder="Title of your listing" /><br/>
+            <input type="text" name="location" placeholder="location" /><br/>
+            <input class="text" name="pool" placeholder="pool?" /><br/>
+            <input type="text" name="seating" placeholder="describe seating options" /><br/>
+            <input type="text" name="cooking" placeholder="describe cooking options ex: grill, firepit" /><br/>
+            <input type="text" name="petfriendly" placeholder="pet friendly?" /><br/>
+            <input type="text" name="tags" placeholder="anything additional you'd like to add" /><br/>
+            <input type="text" name="availability" placeholder="dates available" /><br/>
+            <input type="submit" value="Post Listing" />
+        </form>
+        </div>
     </body>
 </html>
