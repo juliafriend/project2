@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <title>BackyardBorrow</title>
-        <link rel="stylesheet" href="/style.css">
+        <%- include ('./partials/head.ejs') %>
     </head>
+    <header>
+        <%- include ('./partials/header.ejs') %>
+    </header>
     <body>
         <h1>Backyard Borrow Edit</h1>
-        <nav>
-            <a href="/backyard">Return to All Listings</a>
-        </nav>
         <h2>Make changes to your Listing</h2>
         <div class=" new-container">
             <form action="/backyard/<%=backyard.id%>?_method=PUT" method="POST">

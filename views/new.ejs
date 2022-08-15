@@ -1,19 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <title>BackyardBorrow</title>
-        <link rel="stylesheet" href="/style.css">
+        <%- include ('./partials/head.ejs') %>
     </head>
+    <header>
+        <%- include ('./partials/header.ejs') %>
+    </header>
     <body>
-        <!-- <nav>
-            <a href="/backyard/new">Post Your Yard</a>
-            <a href="/backyard">Show All Books</a>
-        </nav> -->
         <h1>Backyard Borrow</h1>
-        <nav>
-            <a href="/backyard">Return to All Listings</a>
-        </nav>
         <h2>List your Backyard</h2>
         <div class=" new-container">
         <form action="/backyard" method="POST">

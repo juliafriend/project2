@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta charset="utf-8">
-        <title>BackyardBorrow</title>
-        <link rel="stylesheet" href="/style.css">
+        <%- include ('./partials/head.ejs') %>
     </head>
+    <header>   
+        <%- include ('./partials/header.ejs') %>
+    </header>
     <body>
         <h1>Backyard Borrow</h1>
         <p>Welcome to Backyard Borrow! Check out available listings below for yards in your area. Click on the title to view more details and availability and to book your new backyard for the day!</p>
-        <nav>
-            <a href="/backyard/new">List your Backyard</a>
-        </nav>
+    
         <div class="master-container">
             <% for (let i = 0; i < backyard.length; i++) { %>
                 <div class="backyard-container">
