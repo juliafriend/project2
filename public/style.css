@@ -1,11 +1,14 @@
 body {
-    background-color: rgb(188, 218, 208);
+    background-color: rgb(107, 135, 107);
 }
 .container-fluid {
-    background-color: rgb(229, 234, 245);
+    background-color: rgb(189, 178, 148);
 }
 #homepage {
-    background-color:rgb(201, 201, 238)
+    background-image: url("https://i.imgur.com/NQN4BjWm.jpg");
+    width: 1000px;
+    background-position: center;
+    background-size: cover;
 }
 
 article {
@@ -20,4 +23,36 @@ article {
 }
 #showtitle {
     text-align:center;
+}
+#boxes {
+    padding: 2em; 
+    background-color:rgb(170, 195, 163); 
+    border: 3px solid black;
+    margin: 1em;
+}
+.header {
+    color:rgb(210, 202, 179);
+    text-shadow: 2px 2px black;
+}
+li {
+    list-style-type: none;
+}
+#show2, #reserve {
+    background-color:rgb(170, 195, 163); 
+    padding: 1em;
+}
+#owner {
+    background-color: rgb(210, 202, 179) ;
+}
+.nav-link {
+    color: rgb(50, 31, 11);
+}
+#links {
+    color:antiquewhite;
+    font-size: smaller;
+    text-shadow: 1px 1px rgb(50, 31, 11);
+    text-align: center;
+}
+#local {
+    text-align: center;
 }

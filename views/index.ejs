@@ -13,16 +13,17 @@
         <div class="container">
             <div class="row">
             <% for (let i = 0; i < backyard.length; i++) { %>
-                <div class="col-md">
-                    <a href="/backyard/<%=backyard[i]._id%>">
+                <div class="col-md" id="boxes">
+                    <a id="links" href="/backyard/<%=backyard[i]._id%>">
                     <h2><%=backyard[i].title%></h2>
                     </a>
-                    <h3><%=backyard[i].location%></h3>
+                    <h3 id="local"><%=backyard[i].location%></h3>
                     <h3><%backyard[i].pool%></h3>    
-                </div>
+                </div> <br>
         <% } %>
             </div>
         </div>
+       
         <div class="container-lg" id="houserules">
         <h3>House Rules</h3>
         <p>As a reminder, all backyards are borrowed for free. Please be respectful of your hosts and take everything with you when you leave. Feedback on your individual experience can be submited below.</p>

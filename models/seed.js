@@ -7,7 +7,7 @@ module.exports = [
         cooking: ["none"],
         petfriendly: true,
         tags: ["relaxing", "peaceful", "flowers"],
-        availability: ["August 20, 2022" , "August 21, 2022"],
+        availability: ["08/22/2022", "08/24/2022"],
         image: "https://i.imgur.com/lEXz7QIm.jpg"         
     },
     {
@@ -18,7 +18,7 @@ module.exports = [
         cooking: ["grill"],
         petfriendly: false,
         tags: ["waterslides", "pool floats", "great for parties"],
-        availability: ["August 22, 2022" , "August 23, 2022", "August 29, 2022" , "August 30, 2022"],
+        availability: ["08/24/2022", "08/27/2022"],
         image: "https://i.imgur.com/8olbGZlm.jpg"
     },
     {
@@ -29,7 +29,7 @@ module.exports = [
         cooking: ["grill", "smoker", "firepit" ],
         petfriendly: true,
         tags: ["great for entertaining", "lots of seating"],
-        availability: ["August 20, 2022"],
+        availability: ["09/21/2022"],
         image: "https://i.imgur.com/RQoIqtrm.jpg"
     },
     {
@@ -40,7 +40,7 @@ module.exports = [
         cooking: ["grill"],
         petfriendly: true,
         tags: ["hot tub", "olympic-sized pool", "cold beverages included"],
-        availability: ["August 19, 2022" , "August 23, 2022", "August 27, 2022" , "August 30, 2022"],
+        availability: ["08/20/2022", "08/21/2022", "08/26/2022"],
         image: "https://i.imgur.com/N1xQkXEm.jpg"
     },
     {
@@ -51,7 +51,7 @@ module.exports = [
         cooking: ["firepit"],
         petfriendly: true,
         tags: ["perfect bonfire spot", "scenic", "relaxing"],
-        availability: ["August 19, 2022" , "August 31, 2022", "September 2, 2022"],
+        availability: ["08/30/2022"],
         image: "https://i.imgur.com/0QloR2Gm.jpg"
     },
     {
@@ -62,7 +62,7 @@ module.exports = [
         cooking: ["grill"],
         petfriendly: true,
         tags: ["bring your pets", "big, grassy yard for activities", "bring bug spray"],
-        availability: ["August 19 - September 2, 2022"],
+        availability: ["08/19/2022", "08/29/2022", "08/30/2022", "08/31/2022"],
         image: "https://i.imgur.com/0Znaj11m.jpg"
     },
     {
@@ -73,7 +73,7 @@ module.exports = [
         cooking: ["bring a cooler"],
         petfriendly: true,
         tags: ["no frills", "there's grass", "keep your shoes on"],
-        availability: ["September 30, 2022"],
+        availability: ["09/30/2022"],
         image: "https://i.imgur.com/LcP30k1m.jpg"
     },
     {
@@ -84,7 +84,7 @@ module.exports = [
         cooking: ["2 grills"],
         petfriendly: true ,
         tags: ["big pool", "pool noodles", "no running on the pool deck"],
-        availability: ["August 21 - August 30, 2022"],
+        availability: ["08/25/2022", "08/26/2022"],
         image: "https://i.imgur.com/EfFB34Wm.png"
     }
 

@@ -8,7 +8,7 @@
     </header>
     <body>
             <div class="container" id="show">
-                    <div class="container-md">
+                    <div class="container-md" id="show2">
                         <h2 id="showtitle"><%=backyard.title%></h2>
                         <h3 id="showtitle"><%=backyard.location%></h3>
                         <%  if (backyard.pool === true) { %>
@@ -39,21 +39,20 @@
                         <% } %>
                         <br>
                         <img src="<%=backyard.image %>" class="img-thumbnail">
-
                     </div>
                     <br><br>
-                    <div class="container-sm"></div>
+                    <div class="container-sm" id="reserve">
                         <h2>Borrow this Backyard!</h2>
                         <form action="/backyard">
-                            Name: <input type="text" name="name" /><br/>
-                            Email Address: <input type="text" name="email" /><br/>
-                            Phone Number: <input type="number" name="phone" /><br/>
-                            Date: <input type="text" name="date" /><br/>
-                            Reserve Now: <input type="checkbox" name="reserve" /><br/>
-                             <input type="submit" value="Submit Reservation">
+                            Name: <br><input type="text" name="name" /><br/>
+                            Email Address: <br> <input type="text" name="email" /><br/>
+                            Phone Number:<br> <input type="number" name="phone" /><br/>
+                            Date: <br><input type="text" name="date" /><br/>
+                            Reserve Now: <br> <input type="checkbox" name="reserve" /><br/>
+                             <br><input type="submit" value="Submit Reservation">
                         </form>
                     </div>
-                    
+                    <br><br>
                     <div class="container" id="owner">
                         <h2>If you are the listing owner:</h2>
                         <nav class="navbar navbar-light bg-light">

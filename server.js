@@ -70,7 +70,7 @@ app.get('/backyard', (req, res) => {
         );
     });
 });
-//seed route////
+// seed route////
 // app.get('/backyard/seed', (req, res) => {
 //     Backyard.create(
 //         seed,
