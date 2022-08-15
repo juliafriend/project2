@@ -7,3 +7,17 @@ body {
 #homepage {
     background-color:rgb(201, 201, 238)
 }
+
+article {
+    text-align: center;
+    padding: 1em;
+}
+#feedback {
+    width: 560px;
+}
+#houserules, #show, #owner, #homepage {
+    padding: 2em;
+}
+#showtitle {
+    text-align:center;
+}

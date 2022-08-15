@@ -7,19 +7,18 @@
         <%- include ('./partials/header.ejs') %>
     </header>
     <body>
-        <h1>Backyard Borrow</h1>
         <h2>List your Backyard</h2>
-        <div class="container">
+        <div class="container-lg">
         <form action="/backyard" method="POST">
-            <input type="text" name="title" placeholder="Title of your listing" /><br/>
-            <input type="text" name="location" placeholder="location" /><br/>
-            <input type="text" name="pool" placeholder="pool?" /><br/>
-            <input type="text" name="seating" placeholder="describe seating options" /><br/>
-            <input type="text" name="cooking" placeholder="describe cooking options ex: grill, firepit" /><br/>
-            <input type="text" name="petfriendly" placeholder="pet friendly?" /><br/>
-            <input type="text" name="tags" placeholder="anything additional you'd like to add" /><br/>
-            <input type="text" name="availability" placeholder="dates available" /><br/>
-            <input type="submit" value="Post Listing" />
+            Title<br><input id= "feedback" type="text" name="title" placeholder="Title of your listing" /><br/>
+            Location<br><input id= "feedback" type="text" name="location" placeholder="Town, State" /><br/>
+            Pool<br><input id= "feedback" type="text" name="pool" placeholder="Do you have a pool?" /><br/>
+            Seating <br><input id= "feedback" type="text" name="seating" placeholder="Describe seating options" /><br/>
+            Cooking <br><input id= "feedback" type="text" name="cooking" placeholder="Describe cooking options ex: grill, firepit" /><br/>
+            Pets <br> <input id= "feedback" type="text" name="petfriendly" placeholder="Pet friendly?" /><br/>
+            Tags <br><input id= "feedback" type="text" name="tags" placeholder="Anything additional you'd like to add" /><br/>
+            Availability <br><input id= "feedback" type="date" name="availability" placeholder="Dates available" /><br/>
+            <br><input type="submit" value="Post Listing" />
         </form>
         </div>
     </body>

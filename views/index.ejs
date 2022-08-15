@@ -3,17 +3,17 @@
     <head>
         <%- include ('./partials/head.ejs') %>
     </head>
-    <header>   
+    <header>  
         <%- include ('./partials/header.ejs') %>
     </header>
+    <div class="container">
+        <article>Welcome to Backyard Borrow! Check out available listings below for yards in your area. Click on the title to view more details, availability, and book your new backyard!</article>
+    </div>
     <body>
-        <div class="container-fluid" id="homepage">
-        <h1>Backyard Borrow</h1>
-        <p>Welcome to Backyard Borrow! Check out available listings below for yards in your area. Click on the title to view more details and availability and to book your new backyard for the day!</p>
-        </div>
         <div class="container">
+            <div class="row">
             <% for (let i = 0; i < backyard.length; i++) { %>
-                <div class="container-md">
+                <div class="col-md">
                     <a href="/backyard/<%=backyard[i]._id%>">
                     <h2><%=backyard[i].title%></h2>
                     </a>
@@ -21,14 +21,17 @@
                     <h3><%backyard[i].pool%></h3>    
                 </div>
         <% } %>
+            </div>
         </div>
-        <div class="container-fluid" id="houserules">
-        <h2>House Rules</h2>
+        <div class="container-lg" id="houserules">
+        <h3>House Rules</h3>
         <p>As a reminder, all backyards are borrowed for free. Please be respectful of your hosts and take everything with you when you leave. Feedback on your individual experience can be submited below.</p>
-            <form action="/backyard">
-                <input type="text" name="feedback" placeholder="Feedback on your experience" /><br/>
-                <input type="submit" value="Submit" />
+            <nav class="navbar navbar-light bg-light">
+            <form class="form-inline" action="/backyard">
+                <input class= "form-control mr-sm-2" id= "feedback" type="text" name="feedback" placeholder="Feedback on your experience" /><br/>
+                <input class= "form-control mr-sm-2" type="submit" value="Submit" />
             </form>
+            </nav>
         </div>
     </body>
 </html>
