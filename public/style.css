@@ -1,3 +1,9 @@
 body {
     background-color: rgb(188, 218, 208);
 }
+.container-fluid {
+    background-color: rgb(229, 234, 245);
+}
+#homepage {
+    background-color:rgb(201, 201, 238)
+}

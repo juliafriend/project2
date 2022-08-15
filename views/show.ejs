@@ -9,8 +9,8 @@
     <body>
 
         <h1>Backyard Borrow- Show Page</h1>
-            <div class="show-container">
-                    <div class="backyard-container">
+            <div class="container">
+                    <div class="container-md">
                         <h2><%=backyard.title%></h2>
                         <h3><%=backyard.location%></h3>
                         <%  if (backyard.pool === true) { %>
@@ -40,10 +40,10 @@
                             <li><%=backyard.availability[m]%></li>
                         <% } %>
                         <br>
-                        <img src="<%=backyard.image %>">
+                        <img src="<%=backyard.image %>" class="img-thumbnail">
 
                     </div>
-                    <div class="reserve-container"></div>
+                    <div class="container-sm"></div>
                         <h2>Borrow this Backyard!</h2>
                         <form action="/backyard">
                             Name: <input type="text" name="name" /><br/>
@@ -54,14 +54,16 @@
                              <input type="submit" value="Submit Reservation">
                         </form>
                     </div>
-                    <div class="buttons-container">
+                    <div class="container">
                         <h2>If you are the listing owner:</h2>
-                        <form action="/backyard/<%=backyard.id%>/edit" method="GET">
-                            <input type="submit" value="Edit Listing">
+                        <nav class="navbar navbar-light bg-light">
+                        <form class="form-inline" action="/backyard/<%=backyard.id%>/edit" method="GET">
+                            <input class="form-control mr-sm-2" type="submit" value="Edit Listing">
                         </form>
-                        <form action="/backyard/<%=backyard.id%>?_method=DELETE" method="POST">
-                            <input type="submit" value="Remove Listing">
+                        <form class="form-inline" action="/backyard/<%=backyard.id%>?_method=DELETE" method="POST">
+                            <input class="form-control mr-sm-2" type="submit" value="Remove Listing">
                         </form>
+                        </nav>
                     </div>   
             </div>
     </body>
