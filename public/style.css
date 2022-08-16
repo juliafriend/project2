@@ -5,7 +5,7 @@ body {
     background-color: rgb(189, 178, 148);
 }
 #homepage {
-    background-image: url("https://i.imgur.com/NQN4BjWm.jpg");
+    background-image: url("https://i.imgur.com/QFXPYNn.jpg");
     width: 1000px;
     background-position: center;
     background-size: cover;
@@ -37,7 +37,7 @@ article {
 li {
     list-style-type: none;
 }
-#show2, #reserve {
+#show2, #reserve, #edits, #list {
     background-color:rgb(170, 195, 163); 
     padding: 1em;
 }

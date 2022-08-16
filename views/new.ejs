@@ -7,8 +7,9 @@
         <%- include ('./partials/header.ejs') %>
     </header>
     <body>
+        <br><br>
+        <div class="container-md" id="list">
         <h2>List your Backyard</h2>
-        <div class="container-lg">
         <form action="/backyard" method="POST">
             Title<br><input id= "feedback" type="text" name="title" placeholder="Title of your listing" /><br/>
             Location<br><input id= "feedback" type="text" name="location" placeholder="Town, State" /><br/>

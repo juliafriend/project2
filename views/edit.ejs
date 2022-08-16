@@ -6,8 +6,9 @@
     <header>
         <%- include ('./partials/header.ejs') %>
     </header>
-    <body>
-        <div class="container-lg">
+    <body> 
+        <br> <br>
+        <div class="container-md" id="edits">
             <h2>Make changes to your Listing</h2>
             <form action="/backyard/<%=backyard.id%>?_method=PUT" method="POST">
                 Title <br><input id= "feedback" type="text" name="title" value="<%=backyard.title%>" /><br/>
