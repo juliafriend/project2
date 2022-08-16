@@ -29,9 +29,10 @@ Listers are property owners who are listing their yard. From the "show page", th
 I utilized partials for the head tag and header tag in EJS files.
 
 ////Styling////
+I utilized Bootstrap for the containers, font, and responsiveness. My CSS file contains color choices, some sizing and alignment preferences, and padding/margins. 
 
 ////Technology////
-This application was built with a Javascript server, Express, MongoDB, Mongoose, EJS files, Node.js, and Nodemon.
+This application was built with a Javascript server, Express, MongoDB, Mongoose, EJS files, Bootstrap framework, CSS, Node.js, and Nodemon.
 
 ////Future Updates////
 -Authentication so listers are able to login and only after loggin in, have access to edit or delete listings

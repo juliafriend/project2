@@ -6,9 +6,8 @@ body {
 }
 #homepage {
     background-image: url("https://i.imgur.com/QFXPYNn.jpg");
-    width: 1000px;
-    background-position: center;
     background-size: cover;
+    filter: grayscale(60%);
 }
 
 article {
@@ -27,7 +26,7 @@ article {
 #boxes {
     padding: 2em; 
     background-color:rgb(170, 195, 163); 
-    border: 3px solid black;
+    border: 3px solid rgb(72, 71, 71);
     margin: 1em;
 }
 .header {
@@ -40,9 +39,11 @@ li {
 #show2, #reserve, #edits, #list {
     background-color:rgb(170, 195, 163); 
     padding: 1em;
+    border: 3px solid rgb(72, 71, 71);
 }
 #owner {
-    background-color: rgb(210, 202, 179) ;
+    background-color: antiquewhite;
+    border: 3px solid rgb(72, 71, 71);;
 }
 .nav-link {
     color: rgb(50, 31, 11);
@@ -55,4 +56,8 @@ li {
 }
 #local {
     text-align: center;
+}
+.footer {
+    text-align: right;
+    font-style: italic;
 }

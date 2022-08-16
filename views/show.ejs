@@ -10,7 +10,7 @@
             <div class="container" id="show">
                     <div class="container-md" id="show2">
                         <h2 id="showtitle"><%=backyard.title%></h2>
-                        <h3 id="showtitle"><%=backyard.location%></h3>
+                        <h3 id="showtitle"><%=backyard.location%></h3> <br>
                         <%  if (backyard.pool === true) { %>
                              <h4> This yard has a pool </h4>
                         <%} if (backyard.pool === false) {  %>
@@ -47,7 +47,7 @@
                             Name: <br><input type="text" name="name" /><br/>
                             Email Address: <br> <input type="text" name="email" /><br/>
                             Phone Number:<br> <input type="number" name="phone" /><br/>
-                            Date: <br><input type="text" name="date" /><br/>
+                            Date: <br><input type="date" name="date" /><br/>
                             Reserve Now: <br> <input type="checkbox" name="reserve" /><br/>
                              <br><input type="submit" value="Submit Reservation">
                         </form>
@@ -65,5 +65,9 @@
                         </nav>
                     </div>   
             </div>
+            <br><br>
+            <footer>
+                <%- include ('./partials/footer.ejs') %>
+            </footer>
     </body>
 </html>
