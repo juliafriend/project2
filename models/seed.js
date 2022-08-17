@@ -86,6 +86,27 @@ module.exports = [
         tags: ["big pool", "pool noodles", "no running on the pool deck"],
         availability: ["08/25/2022", "08/26/2022"],
         image: "https://i.imgur.com/EfFB34Wm.png"
+    },
+    {
+        title: "Hammock Haven" ,
+        location: "Haverhill, MA",
+        pool: true ,
+        seating: ["3 hammocks", "table with 4 chairs", "2 rocking chairs"],
+        cooking: ["none available"],
+        petfriendly: true ,
+        tags: ["realxing", "zen garden", "good vibes"],
+        availability: ["08/27/2022", "08/29/2022"],
+        image: "https://i.imgur.com/J67VfPFm.jpg"
+    },
+    {
+        title: "Yard Games Galore" ,
+        location: "Boxford, MA",
+        pool: false,
+        seating: ["folding chairs"],
+        cooking: ["charcoal grill"],
+        petfriendly: true ,
+        tags: ["volleyball net", "badminton", "horseshoes", "giant jenga"],
+        availability: ["08/25/2022", "08/26/2022"],
+        image: "https://i.imgur.com/3Xpg9pam.jpg"
     }
-
 ]

@@ -108,11 +108,6 @@ app.get('/backyard/:id/edit', (req, res) => {
     });
 });
 app.put('/backyard/:id', (req, res) => {
-    // Re-Formatting arrays
-    req.body.seating = req.body.seating.split(' ');
-    req.body.cooking = req.body.cooking.split(' ');
-    req.body.tags = req.body.tags.split(' ');
-    req.body.availability = req.body.availability.split(' ');
     // Updating Backyard with New Object
     Backyard.findByIdAndUpdate(req.params.id, req.body, {new: true}, (error, foundBackyard) => {
             res.redirect('/backyard');
@@ -120,10 +115,6 @@ app.put('/backyard/:id', (req, res) => {
 });
 //// Create Post route////
 app.post('/backyard', (req, res) => {
-  // Re-Formatting arrays
-  req.body.seating = req.body.seating.split(' ');
-  req.body.cooking = req.body.cooking.split(' ');
-  req.body.tags = req.body.tags.split(' ');
     // Create in MongoDB
     Backyard.create(req.body, (error, createdBackyard) => {
         // Redirect to Index

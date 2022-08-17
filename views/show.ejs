@@ -18,11 +18,11 @@
                             <% } %>
                         <h4>Seating Options:</h4>
                         <% for (let j = 0; j < backyard.seating.length; j++) { %>
-                            <li><%=backyard.seating[j]%></li>
+                            <p><%=backyard.seating[j]%></p>
                         <% } %>
                         <h4>Cooking Options:</h4>
                         <% for (let k = 0; k < backyard.cooking.length; k++) { %>
-                            <li><%=backyard.cooking[k]%></li>
+                            <p><%=backyard.cooking[k]%></p>
                         <% } %>
                         <%  if (backyard.petfriendly === true) { %>
                             <h4> Pets welcome </h4>
@@ -31,11 +31,11 @@
                            <% } %>
                         <h4>Additional Tags:</h4>
                         <% for (let l = 0; l < backyard.tags.length; l++) { %> 
-                            <li><%=backyard.tags[l]%></li>
+                            <p><%=backyard.tags[l]%></p>
                         <% } %>
                         <h4>Dates Available:</h4>
                         <% for (let m = 0; m < backyard.availability.length; m++) { %>
-                            <li><%=backyard.availability[m]%></li>
+                            <p><%=backyard.availability[m]%></p>
                         <% } %>
                         <br>
                         <img src="<%=backyard.image %>" class="img-thumbnail">

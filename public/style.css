@@ -23,6 +23,14 @@ article {
 #showtitle {
     text-align:center;
 }
+#heartpic {
+    text-align:center;
+    padding: 1em;
+}
+#heart {
+    filter: grayscale(50%);
+    border: 2px solid rgb(72, 71, 71)
+}
 #boxes {
     padding: 2em; 
     background-color:rgb(170, 195, 163); 
