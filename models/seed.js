@@ -17,7 +17,7 @@ module.exports = [
         seating: ["lounge chairs", "picnic table"],
         cooking: ["grill"],
         petfriendly: false,
-        tags: ["waterslides", "pool floats", "great for parties"],
+        tags: ["waterslides", "pool floats", "great for parties", "fun"],
         availability: ["08/24/2022", "08/27/2022"],
         image: "https://i.imgur.com/8olbGZlm.jpg"
     },
