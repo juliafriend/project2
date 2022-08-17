@@ -26,7 +26,7 @@ Listers are property owners who are listing their yard. From the "show page", th
 7// destroy route:  delete/backyard/:id: Deletes listing from database
 
 ////Partials////
-I utilized partials for the head tag and header tag in EJS files.
+I utilized partials for the head tag, header, and footer tag in EJS files.
 
 ////Styling////
 I utilized Bootstrap for the containers, font, and responsiveness. My CSS file contains color choices, some sizing and alignment preferences, and padding/margins. 

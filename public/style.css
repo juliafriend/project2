@@ -15,7 +15,10 @@ article {
     padding: 1em;
 }
 #feedback {
-    width: 560px;
+    width: 550px;
+}
+#feedbackmulti {
+    width: 180px;
 }
 #houserules, #show, #owner, #homepage {
     padding: 2em;
