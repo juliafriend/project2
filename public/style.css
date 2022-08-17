@@ -26,7 +26,7 @@ article {
 #boxes {
     padding: 2em; 
     background-color:rgb(170, 195, 163); 
-    border: 3px solid rgb(72, 71, 71);
+    box-shadow: 3px 3px rgb(72, 71, 71);
     margin: 1em;
 }
 .header {
@@ -39,11 +39,11 @@ li {
 #show2, #reserve, #edits, #list {
     background-color:rgb(170, 195, 163); 
     padding: 1em;
-    border: 3px solid rgb(72, 71, 71);
+    box-shadow: 3px 3px rgb(72, 71, 71);
 }
 #owner {
     background-color: antiquewhite;
-    border: 3px solid rgb(72, 71, 71);;
+    box-shadow: 3px 3px rgb(72, 71, 71);
 }
 .nav-link {
     color: rgb(50, 31, 11);

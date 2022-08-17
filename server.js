@@ -71,14 +71,14 @@ app.get('/backyard', (req, res) => {
     });
 });
 // seed route////
-// app.get('/backyard/seed', (req, res) => {
-//     Backyard.create(
-//         seed,
-//         (error, data) => {
-//             res.redirect('/backyard');
-//         }
-//     );
-// });
+app.get('/backyard/seed', (req, res) => {
+    Backyard.create(
+        seed,
+        (error, data) => {
+            res.redirect('/backyard');
+        }
+    );
+});
 
 ////new  Route////
 app.get('/backyard/new', (req, res) => {
