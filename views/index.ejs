@@ -28,13 +28,14 @@
         <div class="container-lg" id="houserules">
         <h3>House Rules</h3>
         <p>As a reminder, all backyards are borrowed for free. Please be respectful of your hosts and take everything with you when you leave. Feedback on your individual experience can be submited below.</p>
-            <nav class="navbar navbar-light bg-light">
-            <form class="form-inline" action="/backyard">
-                <input class= "form-control mr-sm-2" id= "feedback" type="text" name="feedback" placeholder="Feedback on your experience" /><br/>
-                <input class= "form-control mr-sm-2" type="submit" value="Submit" />
-            </form>
-            </nav>
+            <nav class="nav nav-pills justify-content-center" id="feeddiv">    
+             <form class="form-inline" action="mailto:juliaannefriend@gmail.com">
+                <input id= "feedbutton" class= "form-control mr-sm-2" type="submit" value="Submit your Feedback" />
+            </form>  
+        </nav>
         </div>
+
+        
         <footer>
             <%- include ('./partials/footer.ejs') %>
         </footer>

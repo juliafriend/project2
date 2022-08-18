@@ -9,10 +9,19 @@ body {
     background-size: cover;
     filter: grayscale(60%);
 }
-
+#form-control {
+    width: 500px;
+}
 article {
     text-align: center;
     padding: 1em;
+}
+#feeddiv {
+    padding: 1em;
+}
+#feedbutton {
+    width: 260px;
+    background-color:rgb(231, 224, 203);
 }
 #feedback {
     width: 550px;
